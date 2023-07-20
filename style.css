@@ -351,24 +351,25 @@ i {
     justify-content: center;
     gap: 150px;
     padding: 30px 0;
-    
+
 
 
 }
 
 .card_man {
-    width: 450px;   
+    width: 450px;
 }
 
 .card_woman img {
     width: 250px;
-    border-radius:8px;
-}   
-.card_woman{
+    border-radius: 8px;
+}
+
+.card_woman {
     position: relative;
     bottom: 200px;
     left: -100px;
-    
+
 }
 
 .card_text {
@@ -401,6 +402,41 @@ i {
     line-height: 30px;
 }
 
+.game_aera{
+    background-color: #FFF9FC;
+    padding: 50px 0;
+}
+.game_list{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.game_item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    gap: 10px;
+    padding: 15px 15px 15px 10px;
+    border-radius: 50px;
+    
+}
+.game_item:hover{
+    border: 2px solid #FF42A5;
+    color:#FF42A5;
+}
+.game_item:hover p{
+    color:#FF42A5;
+}
+.game_item p {
+    color: #0B0223;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
 
 
 
@@ -424,17 +460,37 @@ i {
         flex-direction: column-reverse;
     }
 
+
     .text_aera {
         margin-right: 0px;
+    }
+
+    .text_box h2 {
+        font-size: 70px;
+    }
+
+    .text_box h1 {
+        font-size: 35px;
+    }
+
+    .text_box {
+        text-align: center;
+    }
+
+    .icon_box span {
+        font-size: 18px;
+
     }
 
     .image_aera img {
         width: 360px;
 
+
     }
 
     .banner_section {
         background-position: right bottom;
+
 
     }
 
@@ -472,43 +528,55 @@ i {
     .feature_img_box p {
         font-size: 12px;
     }
-    .card_aera{
+
+    .card_aera {
         flex-direction: column;
         align-items: center;
         gap: 0;
     }
-    .card_man{
+
+    .card_man {
         width: 260px;
     }
-    .card_woman img{
+
+    .card_woman img {
         width: 150px;
     }
-    .card_woman{
+
+    .card_woman {
         bottom: 145px;
         left: -50px;
-        
+
     }
-    .card_text h2{
+
+    .card_text h2 {
         text-align: center;
         font-size: 36px;
     }
-    .card_text p{
+
+    .card_text p {
         text-align: center;
         font-size: 15px;
     }
-    .card_text{
+
+    .card_text {
         margin-top: 0;
         margin-bottom: 20px;
         padding-right: 0px;
     }
+    .game_list{
+     grid-template-columns: repeat(3, 1fr);
+        
+    }
+    .game_item img{
+        width: 30px;
+    }
 }
 
-
-
-/* @media screen and (min-width:760px) and (max-width:960){
+@media screen and (min-width:576px) and (max-width:768px) {
     .feature_image {
         grid-template-columns: repeat(2, 1fr);
         margin-top: 30px;
 
     }
-} */
+}
