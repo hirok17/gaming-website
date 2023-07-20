@@ -252,9 +252,10 @@ i {
     line-height: 45px;
 }
 
-.feature_section{
+.feature_section {
     padding: 50px 0;
 }
+
 .feature_text {
     text-align: center;
 }
@@ -285,55 +286,56 @@ i {
     line-height: 30px
 }
 
-.feature_image{
+.feature_image {
     display: grid;
     justify-content: center;
     gap: 15px;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     margin-top: 30px;
-   
+
 }
+
 .feature_img_box img {
     width: 270px;
     height: 348px;
-   
-}
-.feature_img_box p{
-    color: #534C64;
-font-family: Work Sans;
-font-size: 15px;
-font-style: normal;
-font-weight: 500;
-line-height: 30px;
-}
-.inner_box{
-     background-image: url(imgs/Rectangle\ 7.png);
-     opacity: 1;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    padding: 156px 146px 187px 148px;
-     
-}
-.inner_box:hover {
-    background-blend-mode: darken;
-    opacity:.5 !important;
-    border-radius: 5px;
-    
 
-   
 }
-.inner_icon{
+.feature_img_box:hover img{
+    border: 2px solid #FF42A5;
+    border-radius: 17px;
+    background-blend-mode: darken;
+    opacity: .5 !important;
+}
+.feature_img_box p {
+    color: #534C64;
+    font-family: Work Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.image_boxaera {
+    position: relative;
+    
+}
+.inner_icon .fa-solid{
+    color: #FFF;
+    font-size: 22px;
+}
+.inner_icon {
     text-align: center;
     position: absolute;
-    top:50%;
     left: 40%;
-     
+    bottom: 40%;
+    opacity: 0;
 }
-.inner_icon .fa-regular {
-    color: #FFF;
+.image_boxaera:hover .inner_icon{
+    opacity: 1;
+    cursor: pointer;
 }
-.inner_icon p{
+
+.inner_icon p {
     color: #F948B2;
 }
 
@@ -388,12 +390,24 @@ line-height: 30px;
     .qtn {
         font-size: 20px;
     }
-    .feature_image{
-         grid-template-columns: repeat(1, 1fr);
+
+    .feature_image {
+        grid-template-columns: repeat(1, 1fr);
         margin-top: 30px;
-       
+
     }
-    .feature_img_box{
+
+    .feature_img_box {
         text-align: center;
     }
+    .feature_img_box p{
+        font-size: 12px;
+    }
 }
+/* @media screen and (min-width:760px) and (max-width:960){
+    .feature_image {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 30px;
+
+    }
+} */
